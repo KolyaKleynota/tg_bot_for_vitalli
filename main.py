@@ -28,7 +28,6 @@ async def start_command(message: types.Message):
     global start_time
     start_time = time.time()
 
-
     await message.answer(text="розпочнемо наш тест\n")
     await bot.send_message(chat_id=message.chat.id, text=question[0], reply_markup=inline_keyboard_array[0])
 
